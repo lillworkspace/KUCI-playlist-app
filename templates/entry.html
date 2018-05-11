@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entry Form</title>
+    <link rel="stylesheet" href="./static/entry.css">
+</head>
+<body>
+
+
+    <div class="div-entries">
+
+      <h1> Enter your playlist </h1>
+
+<form method="post" action="/confirm-entry">
+
+  <div class="tasks">
+    <input name="task"><br>
+
+    <input name="task"><br>
+
+    <input name="task"><br>
+
+  </div>
+    <button type="button" onclick="addInput()"> + Song</button><br>
+    <button type="submit"> Submit Playlist</button>
+
+</form>
+
+    </div>
+
+<script>
+
+    function addInput(){
+
+  //Locates the divider with the tasks
+var taskDiv=document.getElementsByClassName("tasks")[0];
+
+  //Creates the new input
+  var task=document.createElement("INPUT");
+  task.setAttribute("name","task");
+
+  //Adds the new input and line break to the list
+  taskDiv.appendChild(task);
+  taskDiv.appendChild(document.createElement("BR"));
+
+
+}
+
+</script>
+
+
+</body>
+</html>

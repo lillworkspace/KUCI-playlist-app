@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="./static/home.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Place your jinjas2 code here to render the correct name !-->
+
+<div class="page">
+
+{% if name %}
+
+<h1> {{name}}'s Playlists</h1>
+
+{% endif %}
+
+
+<!-- Place your jinjas2 code here to render all tasks !-->
+
+<div class="nav-buttons">
+
+<a href="/entry"><button>Submit Playlist</button></a>
+
+<a href="/"><button> Index Page</button></a>
+
+</div>
+
+<div class="tasks">
+
+	{% for task in tasks %}
+
+	<p>{{task}}</p>
+
+	{% endfor %}
+
+</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

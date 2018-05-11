@@ -1,0 +1,55 @@
+body,html{
+
+    font-family: Courier;
+    background: linear-gradient(45deg,#ffe259,#ffa751);
+    letter-spacing:0.1em;
+    margin:0;
+    max-height:100%;
+    height:100%;
+}
+
+input{
+  margin-bottom:0.8em;
+  padding:0.5em;
+  width:45%;
+  border-radius:0.4em;
+  border-style:solid;
+  border-color:white;
+}
+
+h1{
+
+text-align:center;
+letter-spacing:0.1em;
+
+}
+
+button{
+
+margin-bottom:0.8em;
+  padding:0.5em;
+  width:46.5%;
+  border-radius:0.4em;
+  background:#40BFFF;
+  border-style:dotted;
+  border-color:#43c0ff;
+
+}
+
+button:hover{
+
+  opacity:0.8;
+
+}
+
+.div-entries{
+    width:100%;
+  text-align:center;
+   position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align:center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
